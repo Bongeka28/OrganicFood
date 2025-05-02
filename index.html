@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="register.css"> -->
+    <link rel="stylesheet" href="login.css">
+
+
+    <script type="module" src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="/images/websiteLogo1.jpg"
+                alt="">
+                <h1>OrganicFoods</h1>
+        </div>
+
+        <div class="right">
+            
+            <div>
+                <i class="bi bi-search"></i>
+            </div>
+
+            <div>
+                <i class="bi bi-heart"></i>
+            </div>
+
+            <div class="cartCount">
+                <span>4</span>
+                <i class="bi bi-bag"></i>
+            </div>
+
+            <div>
+                <a id="login">Login</a>
+            </div>
+            <div>
+                <a id="signup">Register</a>
+            </div>
+
+        </div>
+    </nav>
+
+<!-- CARA -->
+<div class="hero-section">
+    <section class="container">
+       <div id="carousel">
+           <figure>
+               <img src="https://i.pinimg.com/736x/99/f8/f0/99f8f070731b4525631bb49de3477c0f.jpg"  alt="  "/>
+           </figure>
+           <figure>
+               <img src="https://i.pinimg.com/736x/0a/59/82/0a598292a4ddd3b1d1390f85022bb16f.jpg"  alt="  "/>
+           </figure>
+           <figure>
+
+               <img src="https://i.pinimg.com/736x/e0/7c/bd/e07cbd6b38898fa355f3b71eb028f5bf.jpg"  alt="  "/>
+
+           </figure>
+           <figure>
+               <img src="https://i.pinimg.com/736x/24/f3/75/24f3752317a9267e0a68463649183358.jpg"  alt="  "/>
+
+           </figure>
+           <figure>
+
+               <img src="https://i.pinimg.com/736x/6e/c8/af/6ec8afaacf83689efc31bee23f1c57f4.jpg"  alt="  "/>
+
+           </figure>
+           <figure>
+               <img src="https://i.pinimg.com/736x/31/80/5f/31805f140989f905ec2c99c9290eab74.jpg"  alt="  "/>
+           </figure>
+
+           <figure>
+               <img src="https://i.pinimg.com/736x/b3/fd/b5/b3fdb57ca802fbd1a9060b6312c06baf.jpg"  alt="  "/>
+           </figure>
+
+           <figure>
+               <img src="https://i.pinimg.com/736x/cc/4f/72/cc4f72c1f4e8daf80dc8fc9da5baae73.jpg"  alt="  "/>
+           </figure>
+
+           <figure>
+               <img src="https://i.pinimg.com/736x/c0/67/03/c067036af81c21f97a64f16f5b4cc2e5.jpg"  alt="  "/>
+           </figure>
+
+
+       </div>
+   </section>
+
+</div>
+
+    <main id="product-container">
+        <!-- <div class="product">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSK7NoX3sC6r62HzmgEY8NcrdeFfC86c5GtQMouSt6VS1E0MFjGksEQtBLjlfMdn3TI3gz9llNTDwJkI_4UBb49iQuD3R9lgqlm5mReobIKTN-Gmg_LYC2d&usqp=CAE"
+                alt="">
+
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> 2.5</div>
+                <div class="title">Pick & Mix Orange Melon 250G</div>
+                <div class="price">R19.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSZNJy-wkoscEUopDROboW85d-AHBllHhHDnYFEPpfVAPzQGOxQ9MObjn05LiwUANz0RuANhxrb1hulWeefpnW6qaqgW6QApTWG8ph2utQCoqw1ImmfTcloSA&usqp=CAE"
+                alt="">
+
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 3</div>
+                <div class="title">	Loose Hass Avocado Large 1kg</div>
+                <div class="price">R34.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQT2x04B5nuc61orMZ7b2Qe9wMLvTcwkK9RxzBml0WIedhs4lqCu9HbgQEdReadjFf2uVeGbTlmv2QZEn8USiIDyPGT_m0jhopvj8MdxGXL3pJ3Lxdz1I8-&usqp=CAE"
+                alt="">
+
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> 2.5</div>
+                <div class="title">Potatoes 1kg</div>
+                <div class="price">R24.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSseKgSMHYesWXszqjX_BaGviXAx9KzWuzDUJm7GtcfQP0f6QskiLhgYZmTNGlM9YYaPV1o-y1CD8beifvrxfhC5ft0ADSvya80bvGZpCRyAvMlJw8i_quw&usqp=CAE"
+                alt="">
+
+            <div class="discount">SAVE</div>
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> 4.8</div>
+                <div class="title">Bananas Small 1kg</div>
+                <div class="price">R16.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRBKUM720afunPA7-_qVlLTXhWsIDm2nyXfRDGg_k7pSKlovpPp7F3ClCMCI6AyDGr3im6jnnWsstO2nWUsh85DFunqPvK30FPCfKdUJfJdnTbwZ5Cv4FNx&usqp=CAE"
+                alt="">
+
+            <div class="discount">SAVE</div>
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> 3.5</div>
+                <div class="title">	Baby Spinach</div>
+                <div class="price">R35.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ5RepnN7bxb76S2oFDfr6sdi-RPD0hOOxSirf2VRL8Bv43jxrorKk4jJ4dgaBecvtnkS16iFNbf7ytWXmNjS1nAL9pel_Kab5pIHHk7Y0CucIem2Ul-gh-&usqp=CAE"
+                alt="">
+
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 3</div>
+                <div class="title">Granny Smith Apples 1.5Kg</div>
+                <div class="price">R24.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTvZcoOZMMGTPVUY6ri8GHZn_G5v19SqgWWQHm_Dgzp2cuat9bywnOYQOMS-sZHAEfi2K-Mt-mQD5q-g8UWgOOcHb_UXkw8pWg0jwPnC8K75_6Ytuz5dqX4&usqp=CAE"
+                alt="">
+
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 5</div>
+                <div class="title">Baby Beetroot 650G</div>
+                <div class="price">R29.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSWC3hqCYqaBERRGdb8fQxgBmTBu9-FI_FurJIymtvHAYGcxUxgN-0eAzuZ7Dh2vR7izxKQrBOCLYoLxRR-5h0NxyexgaI5eSEduuGBqhnDB_fbDcO3Wo5cEA&usqp=CAE"
+                alt="">
+
+            <div class="discount">SAVE</div>
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 4</div>
+                <div class="title">Plums Punnet
+
+                </div>
+                <div class="price">R34.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQXetgu8RtdWHcBVXQo9m2jtgDDZNreXjgc-4E-Gk6RcVIyyorlZ97ecp0xoSq3V8Tk18PPnKSBTuUszy1hya4krSpBAl2i7cnPmMAIIEtL9qY2hmFYYd_VmQ&usqp=CAE"
+                alt="">
+
+
+            <div class="details">
+                <div class="reviews"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 2.1</div>
+                <div class="title">30 Large eggs</div>
+                <div class="price">R69.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://gcgypsey.shop/cdn/shop/files/Fresh-Full-Cream-Ayrshire-Milk-2-L-20026875_960x.jpg?v=1744027636"
+                alt="">
+
+            <div class="discount">SAVE</div>
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 3.2</div>
+                <div class="title">Fresh Full Cream Ayrshire Milk 2L</div>
+                <div class="price">R45.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcShiL1ixFR2RaX9klLPLJIRsRAubWtLUIg5FsajTcuLWfIXFM1VCogUPMKhbvwGsOU3Lf3C7haB8Ww9x6vB2NXPRutFo-zCd8eChHBr4BxCGOOul4DBpd-nyw&usqp=CAE"
+                alt="">
+
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i> 1</div>
+                <div class="title">Buckwheat
+
+                </div>
+                <div class="price">R34.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ_L6NPl-NyC3cLFvyESFmqrZl9dHjQVL2m6vSkDJy2C43chIHE_WDWfRK7TgOO_wd2sOu2wb2pR5oBsfB-StZ-DH_TI0kcEdIjH6nbTdbG6KXro4AjWW07HA&usqp=CAE"
+                alt="">
+
+            <div class="discount">SAVE</div>
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 4.2</div>
+                <div class="title">Tortilla Wraps
+                </div>
+                <div class="price">R85.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTmJXSzCXOQ1njHhUaP0Lq-_xFcXINPzSaSDYstdJczZiD04XS50RheFhsJ_t-G5JeuWDnvf7zCcI7EH87x-_SMz7ZGESIh9NeIVVuWVFLGQQj0ApAc4GUi&usqp=CAE"
+                alt="">
+
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 4</div>
+                <div class="title">Sparkling Natural Spring Water 
+                </div>
+                <div class="price">R74.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ_OeYZEM7HjoOD-z-lWGE0dBcwUxtN0Grp_vFJDPh4zkDusht2uDHVcwR07tDKO1Y8xVMVlPmOMVTWFWmfwD3mu14HurwMOiPua6X9ftM7V9VAZngocXKY&usqp=CAE"
+                alt="">
+
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 5</div>
+                <div class="title">100% Apple Juice
+                </div>
+                <div class="price">R11.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ59rcv58Qt0TV_lQ3fqsb4jtb7Jb5ktaGnl8KB4V5WLs49685xXMH4p32j3mhoHry3jXyh73IPxDpEeCKgFL47qgEQ09nIDDYp80JD0-C9vA9dWxeC_wzrAw&usqp=CAE"
+                alt="">
+
+            <div class="discount">save</div>
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></i><i class="bi bi-star-fill"></i> 3</div>
+                <div class="title">Chicken Broccoli 350 g</div>
+                <div class="price">R99.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSABvbvREVqlreWA4D6vLIiZYqM_R1-JGfemrdjzZD147y76D2LPld3zHRgPELHhn5FvwszIwDWrvwMIRPPcVI0fkmvQNFMqiXXFqpUm6p-aY5rr0ktBBoc&usqp=CAE"
+                alt="">
+
+            
+
+            <div class="details">
+                <div class="reviews"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> 2</div>
+                <div class="title">Crushed Tomato with Vegetables  
+
+                </div>
+                <div class="price">R39.99</div>
+                <div class="btn-group">
+                    <button class="btn-secondary">View</button>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div> -->
+    </main>
+
+
+<dialog id="viewProductDialog">
+
+    <div class="viewProductDiv">
+
+        <div class="dec-img">
+            <img src="https://cdn.dummyjson.com/products/images/groceries/Apple/1.png"
+                alt="">
+        </div>
+        <div class="details-cart" >
+                <h1>APPLE</h1>
+
+                <div class="productDesc">
+                    <h2>THIS PRODUCT</h2>
+                    <div>Fresh and crisp apples, perfect for snacking or incorporating into various recipes.</div>
+                    <div>8 Kg</div>
+                </div>
+
+               
+                <div>
+                <h2>DISCLAIMER</h2>
+                <p>It's fresher for longer: Our unbroken cold chain means your fruit stay fresh for longer, even after you take them home
+                Only the best is good enough: Expect only the best varieties grown in superb locations to deliver the best quality and flavour
+                Our farmers are quality: Before we pick our fruit, we pick our farmers. They're as obsessed with quality as we are
+                We're farming with tomorrow in mind: We promote healthy soil and use water responsibly - so it's better for you and the planet.
+                 </p>
+                 </div>
+                <div>
+                    Product code:
+                    "QTROUV79"
+                </div>
+               
+            
+        </div>
+
+    </div>
+        <div>
+            <button class="dec-btn" id="btn-decclose">Close</button>
+        </div>
+        
+</dialog>
+
+
+<dialog id="cartDialog">
+    
+    <button id="cartButton">Close</button>
+        <h1>Cart</h1>
+
+    
+        <!-- <h1>Cart</h1>
+        <div class="cart">
+
+            <div class="cart-img">
+              <img
+                src="https://cdn.dummyjson.com/products/images/groceries/Kiwi/1.png"
+                alt="image"
+              />
+            </div>
+      
+            <div class="cart-description">
+              
+                <div class="title"><h1>Kiwi 8KG</h1></div>
+                <div class="price">R15.99</div>
+
+                <div class="quatity-div">
+                    <i class="bi bi-dash-circle-fill"></i>
+                    <div>1</div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                </div>
+
+                <div class="btn-cartDialog">
+                    <button class="btn-saveitem" type="button"> Wishlist</button>
+                    <button class="btn-removeitem" type="button">Remove</button>
+                </div>
+            </div>
+      
+             
+        </div> -->
+
+        <!-- <div class="cart">
+
+            <div class="cart-img">
+              <img
+                src="https://cdn.dummyjson.com/products/images/groceries/Cucumber/1.png"
+                alt="Pick & Mix Orange Melon"
+              />
+            </div>
+      
+            <div class="cart-description">
+              
+                <div class="title"><h1>Cucumber 9KG</h1></div>
+                <div class="price">R19.99</div>
+
+                <div class="quatity-div">
+                    <i class="bi bi-dash-circle-fill"></i>
+                    <div>1</div>
+                    <i class="bi bi-plus-circle-fill"></i>
+                </div>
+
+                <div class="btn-cartDialog">
+                    <button class="btn-saveitem" type="button"> Wishlist</button>
+                    <button class="btn-removeitem" type="button">Remove</button>
+                </div>
+            </div>
+      
+             
+        </div> -->
+      
+        <!-- <div class="btn-cartcheckout">
+              
+              <div class="total-price">Total Price : R 35.99</div>
+              <button class="btn-checkout">Checkout</button>
+            
+        </div> -->
+                      
+                    
+</dialog>
+
+<!--  -->
+
+<dialog id="favDialog">
+    <button id="heartButton" type="button">Close</button>
+
+    <h1>Wishlist</h1>
+
+    <div class="fav">
+
+      <div>
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSK7NoX3sC6r62HzmgEY8NcrdeFfC86c5GtQMouSt6VS1E0MFjGksEQtBLjlfMdn3TI3gz9llNTDwJkI_4UBb49iQuD3R9lgqlm5mReobIKTN-Gmg_LYC2d&usqp=CAE"
+          alt="Pick & Mix Orange Melon"
+        />
+      </div>
+
+      <div class="fav-description">
+        <div>
+          <div class="title">Pick & Mix Orange Melon 250G</div>
+          <div class="price">R19.99</div>
+        </div>
+
+        <div class="btn-favDialog">
+          <button class="btn-secondary" type="button">Add to Cart</button>
+          <button class="btn-primary" type="button">Remove</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="fav">
+      <div>
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSABvbvREVqlreWA4D6vLIiZYqM_R1-JGfemrdjzZD147y76D2LPld3zHRgPELHhn5FvwszIwDWrvwMIRPPcVI0fkmvQNFMqiXXFqpUm6p-aY5rr0ktBBoc&usqp=CAE"
+        alt="">
+      </div>
+
+      <div class="fav-description">
+        <div>
+          <div class="title">Crushed Tomato with Vegetables  </div>
+          <div class="price">R39.99</div>
+        </div>
+
+        <div class="btn-favDialog">
+          <button class="btn-secondary" type="button">Add to Cart</button>
+          <button class="btn-primary" type="button">Remove</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+<!-- LOGIN DIALOG -->
+<dialog id="loginDialog">
+    <button id="closeLogin" type="button">Close</button>
+    <h2>Login</h2>
+    <h3>Welcome back!</h3>
+    <p></p>
+    <form action="/submit-signup" method="post">
+      <div class="form-group">
+
+
+      <div class="form-group">
+        <label for="email"class="required">Email Address<i style="font-size:10px"class="fa">&#xf069;</i></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password"class="required">Password<i style="font-size:10px"class="fa">&#xf069;</i></label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+
+
+      <input type="submit" value="Login">
+
+      <p>Don't have an account? <a>Sign Up</a></p>
+      <p>Forgot your password? <a href="#">Reset Password</a></p>
+
+    </form>
+
+</dialog>
+<!-- Signup dialog  -->
+<dialog id="signupDialog">
+    <button id="closeSignup" type="button">Close</button>
+    <h2>Create an Account</h2>
+    <h3>New Customer</h3>
+    <p>By creating an account you will be able to shop faster, 
+        be up to date on an order's status, and keep track of the 
+        orders you have previously made.By creating an account 
+        you will be able to shop faster, be up to date on an 
+        order's status, and keep track of the orders you have previously made.</p>
+    <form action="/submit-signup" method="post">
+      <div class="form-group">
+        <label for="fullname" class="required">Full Name<i style="font-size:10px"class="fa">&#xf069;</i></label>
+
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fullname"class="required">Last Name<i style="font-size:10px"class="fa">&#xf069;</i></label>
+        <input type="text" id="lastname" name="lastname" required>
+      </div>
+
+
+
+      <div class="form-group">
+        <label for="email"class="required">Email Address<i style="font-size:10px"class="fa">&#xf069;</i></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password"class="required">Password<i style="font-size:10px"class="fa">&#xf069;</i></label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password"class="required">Re-Password<i style="font-size:10px"class="fa">&#xf069;</i></label>
+        <input type="password" id="password" name="re-password" required>
+      </div>
+
+      <input type="submit" value="Sign Up">
+
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+</dialog>
+
+
+        <footer>
+            <div class="footer-links">
+                <div>Products</div>
+                <div>Resources</div>
+                <div>Resource</div>
+                <div>Support</div>
+            </div>
+    
+            <hr/>
+    
+            <div class="icons">
+                <div><i class="bi bi-twitter"></i></div>
+                <div><i class="bi bi-facebook"></i></div>
+                <div><i class="bi bi-instagram"></i></div>
+                <div><i class="bi bi-youtube"></i></div>
+            </div>
+    
+            <div>
+                <p>@pagedone at 2025, All rights reserved</p>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>

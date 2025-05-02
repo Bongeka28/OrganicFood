@@ -1,0 +1,25 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "A clean and responsive front-end for an online organic grocery platform. This site showcases a selection of fresh, healthy produce and groceries with a focus on user interaction and aesthetic design.",
+  "main": "script.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaneeiesen/E-Commerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type":"module",
+  "bugs": {
+    "url": "https://github.com/shaneeiesen/E-Commerce/issues"
+  },
+  "homepage": "https://github.com/shaneeiesen/E-Commerce#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10"
+  }
+}
